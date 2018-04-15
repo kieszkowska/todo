@@ -1,0 +1,14 @@
+{
+  "name": "To Do",
+  "short_name": "To Do",
+  "display": "standalone",
+  "background_color": "#F7C1BB",
+  "lang": "pl-PL",
+  "orientation": "portrait",
+  "theme_color": "#F7C1BB",
+  "icons": [{
+    "src": "img/icon.png",
+    "sizes": "515x515",
+    "type": "image/png"
+  }]
+}

@@ -1,0 +1,178 @@
+/*CSS reset*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+::selection {
+  background: #F7C1BB;
+  color: white;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F7C1BB;
+}
+
+#content {
+    height: 75vh;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    color: rgba(0, 0, 0, .85);
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 200%;
+    color: #261919;
+}
+
+input[type="text"] {
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 2px;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .08);
+    font-size: 110%;
+    padding: 3px;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+input[type="text"]:focus {
+    outline-color: #885A5A;
+}
+
+input[type="submit"] {
+    font-size: 110%;
+    background-color: #885A5A;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #9D7878;
+}
+
+input[type="submit"]:focus {
+    outline-color: #885A5A;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+}
+
+#list {
+    background-color: white;
+    overflow-y: scroll;
+    border-radius: 5px;
+}
+
+#title li {
+    padding: 1em;
+}
+
+#list li {
+    padding: .7em 1.5em;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+
+.label {
+    padding: 0  !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.remove {
+    float: right;
+}
+
+.circle {
+    width: 5px;
+    height: 5px;
+    margin: 0 0.5em 0.18em 0;
+    border-radius: 50%;
+    background-color: #885A5A;
+    opacity: 0.7;
+    display: inline-block;
+}
+
+.remove {
+    color: #C7716D;
+    font-weight: 800;
+    font-size: 90%;
+    cursor: pointer;
+}
+
+.remove:hover {
+    color: #885A5A;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #A88787;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-height: 500px) {
+    #content {
+        height: 90vh;
+    }
+}
